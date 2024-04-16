@@ -1,0 +1,55 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: space-between;
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: #12233c83;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.customCheckbox {
+  appearance: none;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgb(73, 73, 73);
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.check::after {
+  content: "✓";
+  display: none;
+}
+
+.customCheckbox:checked + .check::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(73, 73, 73);
+}
+
+.textDecoration {
+  text-decoration: line-through;
+}

@@ -1,0 +1,24 @@
+.navigate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+  flex: 0 0 auto;
+}
+
+.button {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 5px;
+  background: none;
+}
+
+.button:active {
+  background: linear-gradient(324deg, #d2dae2 0%, #eaf9ff 44.37%, #fff 100%);
+}
+
+.active {
+  background: linear-gradient(324deg, #d2dae2 0%, #eaf9ff 44.37%, #fff 100%);
+  transition: color ease 0.6s;
+}

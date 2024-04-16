@@ -1,0 +1,24 @@
+:root {
+  --background: #12233c91;
+  --background-glass: rgba(255, 255, 255, 0.2);
+  --box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  --background-main: linear-gradient(
+    324deg,
+    #8a30e3 0%,
+    #ee6ba1 57.95%,
+    #eac893 100%
+  );
+  --border-radius: 12px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-main);
+}
