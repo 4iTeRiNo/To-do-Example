@@ -1,24 +1,3 @@
 {
-  "todos": [
-    {
-      "title": "Тестовое задание",
-      "completed": false,
-      "id": "1"
-    },
-    {
-      "title": "Прекрассный код",
-      "completed": false,
-      "id": "2"
-    },
-    {
-      "title": "Покрытие тестами",
-      "completed": false,
-      "id": "3"
-    },
-    {
-      "title": "Пожелать хорошего дня коллекам, ой Коллегам! :)",
-      "completed": false,
-      "id": "4"
-    }
-  ]
+  "todos": []
 }

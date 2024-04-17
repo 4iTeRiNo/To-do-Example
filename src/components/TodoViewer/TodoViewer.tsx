@@ -9,7 +9,6 @@ const TodoViewer = () => {
 
   return (
     <div className={styles.wrapperViewer}>
-      <h2 className={styles.header}>What needs to be done?</h2>
       <TodoList state={view} />
       <Button setView={setView} />
     </div>

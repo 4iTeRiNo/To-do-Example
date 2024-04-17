@@ -5,3 +5,9 @@
   list-style: none;
   flex: 1 0 auto;
 }
+
+.header {
+  text-align: center;
+  color: white;
+  flex: 0 0 auto;
+}

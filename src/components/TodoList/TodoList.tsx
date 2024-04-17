@@ -16,6 +16,8 @@ const TodoList = ({ state }: TodoListProps) => {
 
   return (
     <ul className={styles.list}>
+      {data?.length === 0 ? <h2 className={styles.header}>Нет задач!</h2> : ""}
+
       {isSuccess && data.map((todo) => <TodoItem key={todo.id} {...todo} />)}
     </ul>
   );

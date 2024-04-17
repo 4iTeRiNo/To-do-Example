@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   column-gap: 2rem;
+  margin-top: 2.5rem;
 }
 .input {
   padding: 0.375rem 0.75rem;
@@ -34,8 +35,10 @@
   border: none;
 }
 
-.btn:hover {
-  cursor: pointer;
-  transition: background 0.2s ease-in;
-  background: rgba(255, 255, 255, 0.664);
+@media (hover: hover) {
+  .btn:hover {
+    cursor: pointer;
+    transition: background 0.2s ease-in;
+    background: rgba(255, 255, 255, 0.664);
+  }
 }

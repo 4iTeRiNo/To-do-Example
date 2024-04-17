@@ -22,7 +22,7 @@ export const Button = ({ setView }: ButtonProps) => {
       setIsPressed(event.currentTarget.dataset.id);
     }
     if (event.currentTarget.dataset.request) {
-      // ignore-ts
+      //@ts-ignore
       setView(event.currentTarget.dataset.request);
     }
   };

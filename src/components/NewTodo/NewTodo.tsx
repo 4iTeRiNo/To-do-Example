@@ -9,7 +9,7 @@ const NewTodo = () => {
 
   const client = useQueryClient();
 
-  const { mutate: create } = useMutation({
+  const { mutate: create, context } = useMutation({
     mutationFn: createTodo,
     onSuccess: (newTodo) => {
       client.setQueriesData<Todo[]>(["todos", "all"], (oldTodos) => {
@@ -21,6 +21,8 @@ const NewTodo = () => {
       });
     },
   });
+
+  console.log(context);
 
   const submit: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
@@ -37,10 +39,9 @@ const NewTodo = () => {
         type="text"
         value={title}
         onChange={(event) => setTitle(event.target.value)}
-        placeholder="Add new todo"
+        placeholder="What needs to be done?"
       />
       <button type="submit" className={styles.btn}>
-        {" "}
         Add Todo
       </button>
     </form>
