@@ -1,16 +1,13 @@
 li {
   display: flex;
   position: relative;
+  width: 100%;
   align-items: center;
   flex-direction: row;
-  padding: 15px;
+  padding: 0.5rem;
   justify-content: space-between;
   border-radius: var(--border-radius);
   background-color: var(--background);
-}
-
-.label {
-  color: #fff;
 }
 
 .toggle {
@@ -69,6 +66,12 @@ li .toggle + .label {
   background-size: cover;
   border: none;
   transition: transform 0.3s ease-out;
+}
+
+.label {
+  color: #fff;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
 }
 
 @media (hover: hover) {

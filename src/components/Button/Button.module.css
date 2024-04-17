@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 6px;
+  column-gap: 1rem;
   flex: 0 0 auto;
 }
 
@@ -10,7 +10,9 @@
   cursor: pointer;
   border: 1px solid white;
   border-radius: 6px;
-  padding: 5px;
+  font-size: clamp(1.2rem, 5vw, 1rem);
+  font-weight: 600;
+  padding: 10px 15px;
   background: none;
 }
 
@@ -19,6 +21,7 @@
 }
 
 .active {
-  background: linear-gradient(324deg, #d2dae2 0%, #eaf9ff 44.37%, #fff 100%);
+  color: white;
+  background: var(--background-main);
   transition: color ease 0.6s;
 }

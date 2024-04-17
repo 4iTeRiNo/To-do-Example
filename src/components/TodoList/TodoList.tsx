@@ -4,20 +4,23 @@ import styles from "./TodoList.module.css";
 
 import TodoItem from "../TodoItem/TodoITem";
 import { TodoState } from "../../types/todo";
+import { ErrorMessage } from "../AlertMessage/ErrorMessage";
 
 type TodoListProps = {
   state: TodoState;
 };
 
 const TodoList = ({ state }: TodoListProps) => {
-  const { data, isLoading, isSuccess } = useTodosQuery(state);
+  const { data, isLoading, isSuccess, isError } = useTodosQuery(state);
 
-  if (isLoading) return <Spinner />;
+  // if (isLoading) return <Spinner />;
+  // if (isError) return <ErrorMessage />;
 
   return (
     <ul className={styles.list}>
-      {data?.length === 0 ? <h2 className={styles.header}>Нет задач!</h2> : ""}
-
+      {data?.length === 0 ? <h2 className={styles.header}>No Task!</h2> : ""}
+      {isLoading && <Spinner />}
+      {isError && <ErrorMessage />}
       {isSuccess && data.map((todo) => <TodoItem key={todo.id} {...todo} />)}
     </ul>
   );
