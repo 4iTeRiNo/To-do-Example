@@ -16,11 +16,11 @@ const DeleteTodo = ({ id }: DeleteTodoProps) => {
   return (
     <button
       className={styles.delete}
+      title="Delete"
       onClick={() => toggle()}
       data-testid="delete"
-    >
-      &times;
-    </button>
+      role="button"
+    ></button>
   );
 };
 

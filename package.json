@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "concurrently \"npm run dev\" \"npm run server\"",
+    "test" : "npx playwright test --workers=1",
     "dev": "vite",
     "build": "tsc && vite build",
     "server": "json-server --watch db.json --port 3004",

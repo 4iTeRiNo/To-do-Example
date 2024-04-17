@@ -1,7 +1,7 @@
 li {
   display: flex;
   position: relative;
-
+  align-items: center;
   flex-direction: row;
   padding: 15px;
   justify-content: space-between;
@@ -33,6 +33,10 @@ li .toggle {
   height: 30px;
 }
 
+.toggle:checked {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .label {
   word-break: break-all;
   padding: 15px 15px 15px 60px;
@@ -58,19 +62,32 @@ li .toggle + .label {
 
 .delete {
   cursor: pointer;
-  display: block;
-  font-size: 2rem;
-
-  text-align: right;
-  color: red;
-  transition: display 0.2s ease-in-out;
+  position: relative;
+  width: 30px;
+  height: 30px;
   background: transparent;
+  background-size: cover;
   border: none;
+  transition: transform 0.3s ease-out;
 }
 
 @media (hover: hover) {
   li:hover {
     cursor: pointer;
     background-color: #12233c83;
+
+    .delete {
+      background-image: url(../../../public/deleteBtn.svg);
+    }
   }
+  .delete:hover {
+    transform: rotate(170deg);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.delete:focus-visible,
+.delete:focus,
+.delete:target {
+  background-image: url(../../../public/deleteBtn.svg);
 }

@@ -22,8 +22,6 @@ const NewTodo = () => {
     },
   });
 
-  console.log(context);
-
   const submit: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     if (title) {
