@@ -9,7 +9,7 @@ const NewTodo = () => {
 
   const client = useQueryClient();
 
-  const { mutate: create, context } = useMutation({
+  const { mutate: create } = useMutation({
     mutationFn: createTodo,
     onSuccess: (newTodo) => {
       client.setQueriesData<Todo[]>(["todos", "all"], (oldTodos) => {

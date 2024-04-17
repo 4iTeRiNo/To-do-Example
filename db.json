@@ -1,9 +1,3 @@
 {
-  "todos": [
-    {
-      "title": "Тестовое задание",
-      "completed": false,
-      "id": 4
-    }
-  ]
+  "todos": []
 }
