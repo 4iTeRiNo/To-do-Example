@@ -8,5 +8,3 @@
 Для запуска проекта `npm run start`
 
 Для запуска тестов `npm run test`
-
-### Развернутое приложение по ссылке [туть](https://to-do-example-five.vercel.app/);
