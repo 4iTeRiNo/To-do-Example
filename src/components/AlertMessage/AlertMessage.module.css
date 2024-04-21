@@ -25,7 +25,7 @@
   border: 2px solid #ff0000;
 }
 .danger .icon {
-  background-color: #ff2f0000;
+  background-color: transparent;
 }
 
 @keyframes loaderDown {
